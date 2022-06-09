@@ -1,0 +1,44 @@
+.specialization {
+    padding-bottom: 94px;
+
+    &__list {
+        display: flex;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-left: 0px;
+    }
+      
+    &__item:not(:last-child) {
+        padding-right: 30px;
+    }
+      
+      
+    &__container {
+        position: relative; 
+    }
+      
+    &__image {
+        height: auto;
+    }
+      
+    &__box {
+        position: absolute;
+        bottom: 0;
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        width: 370px;
+        height: 70px;
+        background-color: $specialization-box-color;
+    }
+      
+    &__text {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.14;
+        color: $bg-color;
+    }
+}
+  

@@ -1,0 +1,38 @@
+
+  
+  
+.footer-accession__list{
+    display: flex;
+    margin: 0px;
+    padding-left: 0px;
+}
+  
+.footer-accession__item:not(:last-child) {
+    margin-right: 10px;
+}
+  
+.footer-accession__link{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 44px;
+    height: 44px;
+  
+    background-color: $footer-accession-link;
+  
+    border-radius: 50%;
+  
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+  
+.footer-accession__link:hover ,
+.footer-accession__link:focus {
+    background-color: $bg-buttons-color-hover;
+}
+  
+  
+.footer-accession__icon {
+    fill: #FFFFFF;
+}
+  

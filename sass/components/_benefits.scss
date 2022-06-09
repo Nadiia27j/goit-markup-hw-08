@@ -1,0 +1,45 @@
+.benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.cards-benefits {
+    display: flex;
+    
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+      
+    &__icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+       background-color: $color-section;
+       border-radius: 4px;
+       width: 270px;
+       height: 120px;
+      
+       margin-bottom: 30px;
+    }
+      
+    &__subtitle {
+        line-height: 1.14;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 14px; 
+        padding-bottom: 10px;
+    }
+      
+    &__text {
+        color: $secondary-text-color;
+        line-height: 1.71;
+        font-weight: 400;
+    }
+}
+  
+  
