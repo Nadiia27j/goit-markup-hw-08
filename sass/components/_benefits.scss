@@ -4,14 +4,40 @@
 }
 
 .cards-benefits {
-    display: flex;
+    // display: flex;
     
     margin-top: 0px;
     margin-bottom: 0px;
     padding-left: 0px;
 
-    &__item:not(:last-child) {
-        margin-right: 30px;
+
+    @media screen and (min-width: 480px) {
+       
+    }
+
+    @media screen and (min-width: 768px) {
+       
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+        
+        flex-wrap: nowrap; 
+    }
+
+    &__item {
+       justify-content: center;
+
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 3 * 30px) / 2);
+            margin-right: 30px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 3 * 30px) / 4);
+            margin-right: 30px;
+        }
     }
       
     &__icon{
@@ -25,6 +51,18 @@
        height: 120px;
       
        margin-bottom: 30px;
+
+    //    @media screen and (min-width: 480px) {
+    //     width: 450px;
+    //  }
+
+    //   @media screen and (min-width: 768px) {
+    //     width: 354px;
+    //  }
+
+    //  @media screen and (min-width: 1200px) {
+    //     width: 270px;  
+    //  }
     }
       
     &__subtitle {
@@ -33,6 +71,7 @@
         text-transform: uppercase;
         font-size: 14px; 
         padding-bottom: 10px;
+
     }
       
     &__text {

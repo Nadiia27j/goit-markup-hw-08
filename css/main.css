@@ -16,11 +16,28 @@ img {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 ul {
@@ -224,16 +241,48 @@ ul {
 }
 
 .cards-benefits {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
 }
 
-.cards-benefits__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .cards-benefits {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cards-benefits {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.cards-benefits__item {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .cards-benefits__item {
+    -ms-flex-preferred-size: calc((100% - 3 * 30px) / 2);
+        flex-basis: calc((100% - 3 * 30px) / 2);
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cards-benefits__item {
+    -ms-flex-preferred-size: calc((100% - 3 * 30px) / 4);
+        flex-basis: calc((100% - 3 * 30px) / 4);
+    margin-right: 30px;
+  }
 }
 
 .cards-benefits__icon {
