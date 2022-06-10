@@ -265,13 +265,11 @@ ul, ol {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .cards-benefits__item__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
+.cards-benefits__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (min-width: 768px) {
   .cards-benefits__item {
     -ms-flex-preferred-size: calc((100% - 30px * 3) / 2);
         flex-basis: calc((100% - 30px * 3) / 2);
@@ -286,14 +284,14 @@ ul, ol {
 }
 
 @media screen and (min-width: 768px) {
-  .cards-benefits__item:nth-child(2n+1) {
-    margin-right: 30px;
+  .cards-benefits__item:nth-child(n+3) {
+    margin-bottom: 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .cards-benefits__item:nth-child(-n+2) {
-    margin-bottom: 30px;
+  .cards-benefits__item:nth-child(2n+1) {
+    margin-right: 30px;
   }
 }
 
@@ -551,6 +549,14 @@ ul, ol {
   }
 }
 
+.clients-list__item:nth-child(2n+1) {
+  margin-right: 30px;
+}
+
+.clients-list__item:nth-child(-n+4) {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 480px) {
   .clients-list__item {
     -ms-flex-preferred-size: calc((100% - 30px * 3) / 2);
@@ -565,15 +571,21 @@ ul, ol {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .clients-list__item:nth-child(-n+4) {
-    margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .clients-list__item:nth-child(n+3) {
+    margin-bottom: 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .clients-list__item:nth-child(-n+3) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list__item {
+    margin-right: 30px;
   }
 }
 
