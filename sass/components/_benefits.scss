@@ -5,10 +5,6 @@
 
 .cards-benefits {
 
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-left: 0px;
-
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -21,13 +17,26 @@
 
     &__item {
         @media screen and (min-width: 768px) {
-            flex-basis: calc((100% - 3 * 30px) / 2);
-            margin-right: 30px;  
+            flex-basis: calc((100% - 30px * 3) / 2);
+             
         }
+
         @media screen and (min-width: 1200px) {
             flex-basis: calc((100% - 3 * 30px) / 4);
-            margin-right: 30px;
+             
         }
+    }
+
+    @media screen and (min-width: 768px) {
+        &__item:nth-child(2n+1) {
+         margin-right: 30px;
+        } 
+    }
+
+    @media screen and (min-width: 1200px) {
+       &__item:not(:last-child) {
+        margin-right: 30px;
+       } 
     }
       
     &__icon{
@@ -70,10 +79,10 @@
         color: $secondary-text-color;
         line-height: 1.71;
         font-weight: 400;
+    }
 
-        
-        
-        
+    &__text:not(:last-child) {
+        margin-bottom: 30px;
     }
 }
   

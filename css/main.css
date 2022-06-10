@@ -242,12 +242,6 @@ ul, ol {
   padding-bottom: 94px;
 }
 
-.cards-benefits {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-left: 0px;
-}
-
 @media screen and (min-width: 768px) {
   .cards-benefits {
     display: -webkit-box;
@@ -267,9 +261,8 @@ ul, ol {
 
 @media screen and (min-width: 768px) {
   .cards-benefits__item {
-    -ms-flex-preferred-size: calc((100% - 3 * 30px) / 2);
-        flex-basis: calc((100% - 3 * 30px) / 2);
-    margin-right: 30px;
+    -ms-flex-preferred-size: calc((100% - 30px * 3) / 2);
+        flex-basis: calc((100% - 30px * 3) / 2);
   }
 }
 
@@ -277,6 +270,17 @@ ul, ol {
   .cards-benefits__item {
     -ms-flex-preferred-size: calc((100% - 3 * 30px) / 4);
         flex-basis: calc((100% - 3 * 30px) / 4);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cards-benefits__item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cards-benefits__item:not(:last-child) {
     margin-right: 30px;
   }
 }
@@ -337,6 +341,10 @@ ul, ol {
   color: #757575;
   line-height: 1.71;
   font-weight: 400;
+}
+
+.cards-benefits__text:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .specialization {
