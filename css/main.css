@@ -1185,4 +1185,39 @@ ul, ol {
   line-height: 1.87;
   font-weight: 400;
 }
+
+.menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: aqua;
+  height: 796px;
+}
+
+@media screen and (min-width: 480px) {
+  .menu {
+    width: 480px;
+  }
+}
+
+.menu__button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu__button .menu__icon {
+  display: none;
+}
+
+.menu__button.is-open .menu__icon {
+  display: block;
+}
+
+.menu__button.is-open .menu__close {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */
