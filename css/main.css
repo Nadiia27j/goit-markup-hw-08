@@ -269,13 +269,6 @@ ul, ol {
 @media screen and (max-width: 767px) {
   .cards-benefits__item:not(:last-child) {
     margin-bottom: 30px;
-    margin-right: 0;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .cards-benefits__item {
-    width: 450px;
   }
 }
 
@@ -341,6 +334,18 @@ ul, ol {
   color: #757575;
   line-height: 1.71;
   font-weight: 400;
+}
+
+@media screen and (max-width: 767px) {
+  .specialization {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199.9px) {
+  .specialization {
+    display: none;
+  }
 }
 
 .specialization {
