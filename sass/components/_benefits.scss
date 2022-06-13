@@ -7,6 +7,8 @@
 
     justify-content: center;
     margin: -15px;
+
+    
     
 
     @media screen and (min-width: 768px) {
@@ -18,13 +20,21 @@
         flex-wrap: nowrap; 
     }
 
-    // @media screen and (min-width: 480px) {
-    //     margin-bottom: 30px;
-    // }
+
+
+    @media screen and (max-width: 767px) {
+        &__item:not(:last-child) {
+            margin-bottom: 30px; 
+            margin-right: 0;
+        }
+    }
 
     &__item {
 
-        margin-bottom: 30px; 
+        
+        @media screen and (max-width: 767px) {
+          width: 450px;
+        }
 
         @media screen and (min-width: 768px) {
             width: calc((100% - 2 * 30px) / 2); 
