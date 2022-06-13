@@ -109,6 +109,12 @@ ul, ol {
   padding-left: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+}
+
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -161,6 +167,12 @@ ul, ol {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
 }
 
 .contacts__item:last-child {
