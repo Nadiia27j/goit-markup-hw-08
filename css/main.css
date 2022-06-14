@@ -1211,6 +1211,7 @@ ul, ol {
   border: none;
   background-color: transparent;
   margin-left: auto;
+  z-index: 10;
 }
 
 @media screen and (min-width: 768px) {
@@ -1238,8 +1239,9 @@ ul, ol {
 .menu-container {
   display: none;
   position: absolute;
-  top: 100%;
-  width: 100vw;
+  top: 0;
+  width: 100%;
+  left: 0;
   height: 796px;
   background-color: white;
   padding: 48px 40px;
