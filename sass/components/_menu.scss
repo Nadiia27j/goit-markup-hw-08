@@ -9,7 +9,7 @@
     border: none;
     background-color: transparent;
     margin-left: auto;
-    padding: 10px 15px;
+    
 
     @media screen and (min-width: 768px) {
         display: none;
@@ -22,9 +22,6 @@
 
     z-index: 10;
     
-    
-
- 
 }
 
 .menu__button .menu__close {
@@ -40,6 +37,7 @@
 }
 
 
+
 .menu-container {
     display: none;
     position: absolute;
@@ -50,7 +48,7 @@
     
     height: 796px;
     background-color: $bg-color;
-    padding: 48px 83px 48px 40px;
+    padding: 48px  40px;
     
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 
@@ -68,33 +66,79 @@
 
 .menu-nav__link {
     text-decoration: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $maim-text-color;
+    cursor: pointer;  
 }
 
-.menu-contacts__phone {
-    text-decoration: none;
+.menu-nav__link--current {
+    color: $bg-buttons-color-hover;
 }
-.menu-contacts__mail {
-    text-decoration: none;
+
+
+.menu-contacts {
+    margin-top: auto;
 }
 
 .menu-contacts__item:not(:last-child) {
     margin-bottom: 32px;
 }
 
-.menu-socials__link {
+.menu-contacts__phone {
     text-decoration: none;
+    font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $bg-buttons-color-hover;
 }
 
-.menu-contacts {
-    margin-top: auto;
+
+.menu-contacts__mail {
+    text-decoration: none;
+    font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: $secondary-text-color;
 }
+
+
 
 .menu-socials {
-  display: flex;
-  margin: 0;
-  margin-top: 64px;
-  padding-right: auto;
-  
+    display: flex;
+    margin: 0;
+    margin-top: 64px;
+    padding-right: auto;
+    
 }
+
+.menu-socials__link {
+    text-decoration: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $bg-buttons-color-hover;
+}
+
+.menu-socials__link {
+    border-right: 1px solid $form-color;
+    padding-right: 10px;
+    
+}
+
+
 
  

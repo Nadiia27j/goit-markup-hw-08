@@ -16,6 +16,43 @@
       <div class="container">
         <div class="header__nav">
           <a href="" class="header__logo" lang="en"> Web<span class="header__logo header__logo--color">Studio</span> </a> 
+          <button type="button" class="menu__button is-open" data-menu-button  
+           aria-expanded="false"
+           aria-controls="menu-container">
+           <svg width="40" height="40" aria-label="Переключатель мобільного меню">
+              <use class="menu__close" href="./images/symbol-defs.svg#icon-close-menu"></use>
+              <use class="menu__icon" href="./images/symbol-defs.svg#icon-menu"></use>
+           </svg>
+          </button>
+          <div class="menu-container is-open" id="menu-container" data-menu>
+           <ul class="menu-nav">
+             <li class="menu-nav__item"> <a href="./index.html" class="menu-nav__link ">Студія</a></li>
+             <li class="menu-nav__item"> <a href="" class="menu-nav__link menu-nav__link--current">Портфоліо</a></li>
+             <li class="menu-nav__item"> <a href="" class="menu-nav__link">Контакти</a></li>
+           </ul>
+            <ul class="menu-contacts">
+              <li class="menu-contacts__item">
+                 <a href="tel:+380961111111" class="menu-contacts__phone">+38 096 111 11 11</a> 
+             </li>
+             <li class="menu-contacts__item">
+                <a href="info@devstudio.com" class="menu-contacts__mail">info@devstudio.com</a>  
+             </li>
+            </ul>
+           <ul class="menu-socials">
+             <li class="menu-socials__item">
+               <a href="" class="menu-socials__link">Instagram</a>
+             </li>
+             <li class="menu-socials__item">
+               <a href="" class="menu-socials__link">Twitter</a>
+             </li>
+             <li class="menu-socials__item">
+               <a href="" class="menu-socials__link">Facebook</a>
+             </li>
+             <li class="menu-socials__item">
+               <a href="" class="menu-socials__link">LinkedIn</a>
+             </li>
+           </ul>
+          </div>
           <ul class="site-nav">
             <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Студія</a></li>
             <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="">Портфоліо</a></li>
