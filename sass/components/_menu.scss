@@ -3,50 +3,59 @@
 
 
 .menu__button {
-    display: inline-block;
+    display: inline-flex;
     margin: 0;
     padding: 0;
     border: none;
     background-color: transparent;
-   
+    margin-left: auto;
 
     @media screen and (min-width: 768px) {
         display: none;
       }
 }
 
-.menu__button .menu__icon {
+.menu__button .menu__close {
     display: none;
 }
     
-.menu__button.is-open .menu__icon {
+.menu__button.is-open .menu__close {
  display: block;
 }
 
-.menu__button.is-open .menu__close {
+.menu__button.is-open .menu__icon {
     display: none;
 }
 
 
 .menu-container {
+    display: none;
     position: absolute;
+  
     top: 100%;
-    left: 0;
-    width: 100%;
-
+    width: 100vw;
+    
+    height: 796px;
     background-color: palevioletred;
     padding: 48px 40px;
     
-   
-
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 
-    // @media screen and (min-width: 480px) {
-    //     width: 480px;
-    // }
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    &.is-open {
+        display: block;
+    }
 
     
-    height: 796px;
+
+    
 
 }
 
