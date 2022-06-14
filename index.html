@@ -21,6 +21,7 @@
             <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфоліо</a></li>
             <li class="site-nav__item"><a class="site-nav__link" href="">Контакти</a></li>
          </ul>
+
           <ul class="contacts">
             <li class="contacts__item">
               <a class="contacts__link" href="mailto:info@devstudio.com"> 
@@ -39,6 +40,45 @@
               </a>
             </li>
           </ul>
+
+          <button type="button" class="menu__button is-open" data-menu-button  
+            aria-expanded="false"
+            aria-controls="menu-container">
+            <svg width="40" height="40" aria-label="Переключатель мобільного меню">
+              <use class="menu__icon" href="./images/symbol-defs.svg#icon-menu"></use>
+              <use class="menu__close" href="./images/symbol-defs.svg#icon-close-menu"></use>
+            </svg>
+          </button>
+          <div class="menu-container" id="menu-container">
+           <ul class="menu-nav">
+              <li class="menu-nav__item"> <a href="" class="menu-nav__link current">Студия</a></li>
+              <li class="menu-nav__item"> <a href="./portfolio.html" class="menu-nav__link">Портфолио</a></li>
+              <li class="menu-nav__item"> <a href="" class="menu-nav__link">Контакты</a></li>
+           </ul>
+         
+           <ul class="menu-list">
+             <li class="menu-list__item">
+                <a href="tel:+380961111111" class="menu-list__phone">+38 (096) 111 11 11</a> 
+             </li>
+             <li class="menu-list__item">
+                <a href="info@devstudio.com" class="menu-list__mail">info@devstudio.com</a>  
+             </li>
+           </ul>
+           <ul class="menu-logo">
+             <li class="menu-logo__item">
+                <a href="" class="menu-logo__link">Instagram</a>
+             </li>
+             <li class="menu-logo__item">
+                <a href="" class="menu-logo__link">Twitter</a>
+             </li>
+             <li class="menu-logo__item">
+                <a href="" class="menu-logo__link">Facebook</a>
+             </li>
+             <li class="menu-logo__item">
+                <a href="" class="menu-logo__link">LinkedIn</a>
+             </li>
+           </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -458,44 +498,7 @@
       </div>
     </div> -->
 
-    <div class="menu" data-menu>
-      <button data-menu-button class="menu__button is-open aria" aria-expanded="false">
-          <svg width="40" height="40" aria-label="Переключатель мобільного меню">
-              <use class="menu__icon" href="./images/symbol-defs.svg#icon-menu"></use>
-              <use class="menu__close" href="./images/symbol-defs.svg#icon-close-menu"></use>
-          </svg>
-      </button>
-      <ul class="menu-nav list">
-          <li class="menu-nav__item"> <a href="" class="menu-link current">Студия</a></li>
-          <li class="menu-nav__item"> <a href="./portfolio.html" class="menu-link">Портфолио</a></li>
-          <li class="menu-nav__item"> <a href="" class="menu-link">Контакты</a></li>
-      </ul>
-      </nav>
-      <ul class="menu-list list">
-          <li class="menu-list__item">
-              <a href="tel:+380961111111" class="menu-phone">+38 (096) 111 11 11</a>
-              
-          </li>
-          <li class="menu-list__item">
-              <a href="info@devstudio.com" class="menu-mail">info@devstudio.com</a>
-              
-          </li>
-      </ul>
-      <ul class="menu-logo list">
-          <li class="menu-icon">
-              <a href="" class="menu-text">Instagram</a>
-          </li>
-          <li class="menu-icon">
-              <a href="" class="menu-text">Twitter</a>
-          </li>
-          <li class="menu-icon">
-              <a href="" class="menu-text">Facebook</a>
-          </li>
-          <li class="menu-icon">
-              <a href="" class="menu-text">LinkedIn</a>
-          </li>
-      </ul>
-    </div>
+    
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>  
   </body>
