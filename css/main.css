@@ -1240,9 +1240,9 @@ ul, ol {
   display: none;
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   left: 0;
-  height: 796px;
   background-color: white;
   padding: 48px  40px;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);

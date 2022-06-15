@@ -43,10 +43,11 @@
     position: absolute;
   
     top: 0;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     left: 0;
     
-    height: 796px;
+    
     background-color: $bg-color;
     padding: 48px  40px;
     
