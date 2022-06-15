@@ -923,13 +923,6 @@ ul, ol {
   line-height: 1.25;
 }
 
-.subscription .box-button {
-  margin: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .subscription__button {
   display: -webkit-box;
   display: -ms-flexbox;
