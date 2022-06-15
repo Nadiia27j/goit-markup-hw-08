@@ -709,6 +709,14 @@ ul, ol {
   }
 }
 
+.footer .logo-social {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
 @media screen and (min-width: 768px) {
   .footer .logo-social {
     display: -webkit-box;
@@ -720,8 +728,28 @@ ul, ol {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer .logo-social {
+    text-align: start;
+    padding-bottom: 0;
+  }
+}
+
 .footer__contacts {
-  margin-right: 70px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__contacts {
+    padding-bottom: 0;
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__contacts {
+    margin-right: 70px;
+  }
 }
 
 .footer__logo {
@@ -737,6 +765,7 @@ ul, ol {
 
 .footer__logo--color {
   color: white;
+  padding-bottom: 0;
 }
 
 .footer__list {
@@ -773,6 +802,9 @@ ul, ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0px;
   padding-left: 0px;
 }
@@ -808,8 +840,18 @@ ul, ol {
   fill: #FFFFFF;
 }
 
+.subscription {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .subscription__form {
-  display: block;
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -817,7 +859,6 @@ ul, ol {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 93px;
   }
 }
 
@@ -837,13 +878,21 @@ ul, ol {
 }
 
 .subscription__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--footer-bg-color);
   padding-left: 16px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription__input {
+    width: 358px;
+    margin-bottom: 0px;
+  }
 }
 
 .subscription__input::-webkit-input-placeholder {
@@ -872,6 +921,13 @@ ul, ol {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
+}
+
+.subscription .box-button {
+  margin: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .subscription__button {
