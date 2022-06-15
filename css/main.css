@@ -281,12 +281,21 @@ ul, ol {
 
 .hero__title {
   max-width: 500px;
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
-  line-height: 1.36;
+  line-height: 1.61;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    max-width: 500px;
+  }
 }
 
 .hero__button {
@@ -860,7 +869,7 @@ ul, ol {
 
 .backdrop-modal {
   position: absolute;
-  top: 25%;
+  top: 35%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1164,8 +1173,25 @@ ul, ol {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   padding-left: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding-left: 0px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1179,19 +1205,20 @@ ul, ol {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    padding-left: 0px;
   }
 }
 
-.portfolio-nav__item:last-child {
-  margin-top: 15px;
-}
-
-.portfolio-nav__item {
+.portfolio-nav__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio-nav__item:last-child {
-  margin-right: 0px;
+@media screen and (max-width: 767px) {
+  .portfolio-nav__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 .portfolio-nav__button {
