@@ -1,7 +1,4 @@
 
-
-
-
 .menu__button {
     display: inline-flex;
     margin: 0;
@@ -21,7 +18,6 @@
     }
 
     z-index: 1000;
-    
 }
 
 .menu__button .menu__icon {
@@ -35,8 +31,6 @@
 .menu__button.is-open .menu__close {
     display: none;
 }
-
-
 
 .menu-container {
     display: none;
@@ -63,13 +57,12 @@
 
     flex-direction: column;
     justify-content: space-between;
-
-    
 }
 
 .menu-nav__item:not(:last-child) {
     margin-bottom: 32px;
 }
+
 .menu-nav__link {
     text-decoration: none;
     font-family: "Roboto";
@@ -85,7 +78,6 @@
 .menu-nav__link--current {
     color: $bg-buttons-color-hover;
 }
-
 
 .menu-contacts {
     margin-top: auto;
@@ -119,7 +111,6 @@
 }
 
 
-
 .menu-socials {
     display: flex;
     margin: 0;
@@ -138,7 +129,6 @@
     letter-spacing: 0.02em;
     color: $bg-buttons-color-hover;
 }
-
 
 
 .menu-socials__item:not(:last-child) {
