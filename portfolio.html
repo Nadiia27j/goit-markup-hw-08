@@ -98,11 +98,27 @@
              <div class="portfolio-cards__container">
                <a class="portfolio-cards__link" href="">
                  <div class="portfolio-cards__box">
-                   <img class="portfolio-cards__image" 
-                   src="./images/portfolio/img.jpg"
-                   alt="Ноутбук з фотографіями на екрані"
-                   width="370" height="294"
-                   />
+                   <picture>
+                      <source
+                      @media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img_1_big.jpg 1x,
+                      ./images/portfolio/img_1_big@2x.jpg 2x"
+                      type="image/jpg">
+                      <source
+                      @media="(min-width: 768px)"
+                      srcset="./images/portfolio/img_1_big.jpg 1x,
+                      ./images/portfolio/img_1_big@2x.jpg 2x"
+                      type="image/jpg">
+                      <source
+                      @media="(max-width: 767px)"
+                      srcset="./images/portfolio/img_1_big.jpg 1x,
+                      ./images/portfolio/img_1_big@2x.jpg 2x"
+                      type="image/jpg">
+                      <img class="portfolio-cards__image" 
+                      src="./images/portfolio/img_1_small.jpg"
+                      alt="Ноутбук з фотографіями на екрані"
+                      width="450" height="294"/>
+                   </picture>
                    <div class="portfolio-cards__overlay">
                      <p class="portfolio-cards__content">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                    </div>
@@ -120,11 +136,27 @@
             <div class="portfolio-cards__container">
               <a class="portfolio-cards__link" href="">
                 <div class="portfolio-cards__box">
-                  <img class="portfolio-cards__image"
-                  src="./images/portfolio/img1.jpg"
-                  alt="Два баскетболіста з м'ячем"
-                  width="370" height="294"
-                 />
+                  <picture>
+                    <source
+                    @media="(min-width: 1200px)"
+                    srcset="./images/portfolio/img_2_big.jpg 1x,
+                    ./images/portfolio/img_2_big@2x.jpg 2x"
+                    type="image/jpg">
+                    <source
+                    @media="(min-width: 768px)"
+                    srcset="./images/portfolio/img_2_big.jpg 1x,
+                    ./images/portfolio/img_2_big@2x.jpg 2x"
+                    type="image/jpg">
+                    <source
+                    @media="(max-width: 767px)"
+                    srcset="./images/portfolio/img_2_big.jpg 1x,
+                    ./images/portfolio/img_2_big@2x.jpg 2x"
+                    type="image/jpg">
+                    <img class="portfolio-cards__image" 
+                    src="./images/portfolio/img_2_small.jpg"
+                    alt="Ноутбук з фотографіями на екрані"
+                    width="450" height="294"/>
+                  </picture>
                  <div class="portfolio-cards__overlay">
                    <p class="portfolio-cards__content">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                  </div>
@@ -140,11 +172,27 @@
             <div class="portfolio-cards__container">
               <a class="portfolio-cards__link" href="">
                 <div class="portfolio-cards__box">
-                  <img class="portfolio-cards__image"
-                  src="./images/portfolio/img2.jpg"
-                  alt="Логотип ресторану, намальована риба"
-                  width="370" height="294"
-                 />
+                  <picture>
+                    <source
+                    @media="(min-width: 1200px)"
+                    srcset="./images/portfolio/img_3_big.jpg 1x,
+                    ./images/portfolio/img_3_big@2x.jpg 2x"
+                    type="image/jpg">
+                    <source
+                    @media="(min-width: 768px)"
+                    srcset="./images/portfolio/img_3_big.jpg 1x,
+                    ./images/portfolio/img_3_big@2x.jpg 2x"
+                    type="image/jpg">
+                    <source
+                    @media="(max-width: 767px)"
+                    srcset="./images/portfolio/img_3_big.jpg 1x,
+                    ./images/portfolio/img_3_big@2x.jpg 2x"
+                    type="image/jpg">
+                    <img class="portfolio-cards__image" 
+                    src="./images/portfolio/img_3_small.jpg"
+                    alt="Ноутбук з фотографіями на екрані"
+                    width="450" height="294"/>
+                  </picture>
                  <div class="portfolio-cards__overlay">
                    <p class="portfolio-cards__content">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                  </div>
@@ -160,7 +208,27 @@
              <div class="portfolio-cards__container">
                <a class="portfolio-cards__link" href="">
                  <div class="portfolio-cards__box">
-                   <img class="portfolio-cards__image" src="./images/portfolio/img3.jpg" alt="Навушники" width="370" height="294" />
+                   <picture>
+                     <source
+                     @media="(min-width: 1200px)"
+                     srcset="./images/portfolio/img_4_big.jpg 1x,
+                     ./images/portfolio/img_4_big@2x.jpg 2x"
+                     type="image/jpg">
+                     <source
+                     @media="(min-width: 768px)"
+                     srcset="./images/portfolio/img_4_big.jpg 1x,
+                     ./images/portfolio/img_4_big@2x.jpg 2x"
+                     type="image/jpg">
+                     <source
+                     @media="(max-width: 767px)"
+                     srcset="./images/portfolio/img_4_big.jpg 1x,
+                     ./images/portfolio/img_4_big@2x.jpg 2x"
+                     type="image/jpg">
+                     <img class="portfolio-cards__image" 
+                     src="./images/portfolio/img_4_small.jpg"
+                     alt="Ноутбук з фотографіями на екрані"
+                     width="450" height="294"/>
+                   </picture>
                    <div class="portfolio-cards__overlay">
                      <p class="portfolio-cards__content">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                    </div>
@@ -176,11 +244,27 @@
             <div class="portfolio-cards__container">
               <a class="portfolio-cards__link" href="">
                 <div class="portfolio-cards__box">
-                  <img class="portfolio-cards__image"
-                  src="./images/portfolio/img4.jpg"
-                  alt="Дві коробочки, одна біла а одна бежева"
-                  width="370" height="294"
-                 />
+                  <picture>
+                    <source
+                    @media="(min-width: 1200px)"
+                    srcset="./images/portfolio/img_5_big.jpg 1x,
+                    ./images/portfolio/img_5_big@2x.jpg 2x"
+                    type="image/jpg">
+                    <source
+                    @media="(min-width: 768px)"
+                    srcset="./images/portfolio/img_5_big.jpg 1x,
+                    ./images/portfolio/img_5_big@2x.jpg 2x"
+                    type="image/jpg">
+                    <source
+                    @media="(max-width: 767px)"
+                    srcset="./images/portfolio/img_5_big.jpg 1x,
+                    ./images/portfolio/img_5_big@2x.jpg 2x"
+                    type="image/jpg">
+                    <img class="portfolio-cards__image" 
+                    src="./images/portfolio/img_5_small.jpg"
+                    alt="Ноутбук з фотографіями на екрані"
+                    width="450" height="294"/>
+                  </picture>
                  <div class="portfolio-cards__overlay">
                    <p class="portfolio-cards__content">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                  </div>
@@ -196,11 +280,27 @@
             <div class="portfolio-cards__container">
               <a  class="portfolio-cards__link" href="">
                 <div class="portfolio-cards__box">
-                  <img class="portfolio-cards__image"
-                  src="./images/portfolio/img5.jpg"
-                  alt="Монітор від комп'ютера"
-                  width="370" height="294"
-                 />
+                  <picture>
+                    <source
+                    @media="(min-width: 1200px)"
+                    srcset="./images/portfolio/img_6_big.jpg 1x,
+                    ./images/portfolio/img_6_big@2x.jpg 2x"
+                    type="image/jpg">
+                    <source
+                    @media="(min-width: 768px)"
+                    srcset="./images/portfolio/img_6_big.jpg 1x,
+                    ./images/portfolio/img_6_big@2x.jpg 2x"
+                    type="image/jpg">
+                    <source
+                    @media="(max-width: 767px)"
+                    srcset="./images/portfolio/img_6_big.jpg 1x,
+                    ./images/portfolio/img_6_big@2x.jpg 2x"
+                    type="image/jpg">
+                    <img class="portfolio-cards__image" 
+                    src="./images/portfolio/img_6_small.jpg"
+                    alt="Ноутбук з фотографіями на екрані"
+                    width="450" height="294"/>
+                  </picture>
                  <div class="portfolio-cards__overlay">
                    <p class="portfolio-cards__content">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                  </div>
@@ -216,7 +316,27 @@
             <div class="portfolio-cards__container">
               <a class="portfolio-cards__link" href="">
                 <div class="portfolio-cards__box">
-                  <img class="portfolio-cards__image" src="./images/portfolio/img6.jpg" alt="Книга" width="370" height="294" />
+                  <picture>
+                    <source
+                    @media="(min-width: 1200px)"
+                    srcset="./images/portfolio/img_7_big.jpg 1x,
+                    ./images/portfolio/img_7_big@2x.jpg 2x"
+                    type="image/jpg">
+                    <source
+                    @media="(min-width: 768px)"
+                    srcset="./images/portfolio/img_7_big.jpg 1x,
+                    ./images/portfolio/img_7_big@2x.jpg 2x"
+                    type="image/jpg">
+                    <source
+                    @media="(max-width: 767px)"
+                    srcset="./images/portfolio/img_7_big.jpg 1x,
+                    ./images/portfolio/img_7_big@2x.jpg 2x"
+                    type="image/jpg">
+                    <img class="portfolio-cards__image" 
+                    src="./images/portfolio/img_7_small.jpg"
+                    alt="Ноутбук з фотографіями на екрані"
+                    width="450" height="294"/>
+                  </picture>
                  <div class="portfolio-cards__overlay">
                    <p class="portfolio-cards__content">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                  </div>
@@ -232,7 +352,27 @@
             <div class="portfolio-cards__container">
               <a class="portfolio-cards__link" href="">
                 <div class="portfolio-cards__box">
-                  <img class="portfolio-cards__image" src="./images/portfolio/img7.jpg" alt="Бірка" width="370" height="294" />
+                  <picture>
+                    <source
+                    @media="(min-width: 1200px)"
+                    srcset="./images/portfolio/img_8_big.jpg 1x,
+                    ./images/portfolio/img_8_big@2x.jpg 2x"
+                    type="image/jpg">
+                    <source
+                    @media="(min-width: 768px)"
+                    srcset="./images/portfolio/img_8_big.jpg 1x,
+                    ./images/portfolio/img_8_big@2x.jpg 2x"
+                    type="image/jpg">
+                    <source
+                    @media="(max-width: 767px)"
+                    srcset="./images/portfolio/img_8_big.jpg 1x,
+                    ./images/portfolio/img_8_big@2x.jpg 2x"
+                    type="image/jpg">
+                    <img class="portfolio-cards__image" 
+                    src="./images/portfolio/img_8_small.jpg"
+                    alt="Ноутбук з фотографіями на екрані"
+                    width="450" height="294"/>
+                  </picture>
                  <div class="portfolio-cards__overlay">
                    <p class="portfolio-cards__content">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                  </div>
@@ -248,11 +388,27 @@
             <div class="portfolio-cards__container">
               <a class="portfolio-cards__link" href="">
                 <div class="portfolio-cards__box">
-                  <img class="portfolio-cards__image"
-                  src="./images/portfolio/img8.jpg"
-                  alt="Руки на клавіатурі ноутбуку"
-                  width="370" height="294"
-                 />
+                  <picture>
+                    <source
+                    @media="(min-width: 1200px)"
+                    srcset="./images/portfolio/img_9_big.jpg 1x,
+                    ./images/portfolio/img_9_big@2x.jpg 2x"
+                    type="image/jpg">
+                    <source
+                    @media="(min-width: 768px)"
+                    srcset="./images/portfolio/img_9_big.jpg 1x,
+                    ./images/portfolio/img_9_big@2x.jpg 2x"
+                    type="image/jpg">
+                    <source
+                    @media="(max-width: 767px)"
+                    srcset="./images/portfolio/img_9_big.jpg 1x,
+                    ./images/portfolio/img_9_big@2x.jpg 2x"
+                    type="image/jpg">
+                    <img class="portfolio-cards__image" 
+                    src="./images/portfolio/img_9_small.jpg"
+                    alt="Ноутбук з фотографіями на екрані"
+                    width="450" height="294"/>
+                  </picture>
                  <div class="portfolio-cards__overlay">
                    <p class="portfolio-cards__content">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                  </div>
