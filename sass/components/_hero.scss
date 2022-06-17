@@ -1,6 +1,5 @@
 .hero {
-    width: 480px;
-    height: 400px;
+    
     margin-left: auto;
     margin-right: auto;
     
@@ -10,8 +9,8 @@
   
     padding-top: 200px;
     padding-bottom: 200px;
-    background-size: 480px 400px;
-    // background-size: cover;
+ 
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
@@ -25,35 +24,23 @@
       
     }
 
-    @media screen and(min-width: 1200px) {
-        .hero {
-            
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header_big.jpg);
-            
-        }
-
+    @media screen and(min-width: 768px) {    
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header_middle.jpg);
+        
         @media (min-device-pixel-ratio: 2),
            (min-resolution: 2dppx),
             (min-resolution: 192dpi) {
-            .hero {
-                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header_big@2x.jpg);
-            }
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header_middle@2x.jpg);
         }
     }
 
-    @media screen and(min-width: 768px) {
-        .hero {
+    @media screen and(min-width: 1200px) {
+       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header_big.jpg);
             
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header_middle.jpg);
-            
-        }
-
         @media  (min-device-pixel-ratio: 2),
-        (min-resolution: 2dppx),
+           (min-resolution: 2dppx),
            (min-resolution: 192dpi) {
-            .hero {
-                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header_middle@2x.jpg);
-            }
+           background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header_big@2x.jpg);
         }
     }
 
